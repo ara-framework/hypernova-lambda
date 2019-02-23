@@ -1,12 +1,21 @@
 {
   "name": "hypernova-lambda",
+  "description": "Implementation of Hypernova for AWS Lambda",
   "author": "Felipe Guizar Diaz <felipegaiacharly@gmail.com>",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "lib/index.js",
   "license": "MIT",
   "scripts": {
     "build": "babel src -d lib"
   },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:marconi1992/hypernova-lambda.git"
+  },
+  "keywords": [
+    "hypernova",
+    "lambda"
+  ],
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-preset-airbnb": "^2.5.3",

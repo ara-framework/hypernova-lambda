@@ -17,5 +17,23 @@ The only supported option for Hypernova Lambda is `getComponent` and `processJob
 
 ## Installation
 ```sh
-npm install --save hypernova-lambda
+npm install --save hypernova-lambda hypernova
+```
+
+## Example
+
+```js
+import hypernova from 'hypernova-lambda';
+
+const getComponent = (name) => {
+  if (name === 'Header') {
+    return /* return component to be render here */
+  }
+  return null;
+};
+
+export const handler = (event, context, callback) => {
+  hypernova(event, { getComponent }, callback);
+};
+
 ```
